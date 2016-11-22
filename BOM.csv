@@ -1,0 +1,30 @@
+ref,value,footprint,Digikey Part No.,Mouser Part No.,Quantity
+C3 C5 C1 C11 C12 C14 C15,0.1uF,project_footprints:C_0402_Hand,490-6328-1-ND,,7
+U5,DRV8835,project_footprints:WSON-12-2x3,296-30391-1-ND,,1
+D1,BAT20J,project_footprints:sod80c,497-3381-1-ND,,1
+U3,AP2112K-3.3V,TO_SOT_Packages_SMD:SOT-23-5,AP2112K-3.3TRG1DICT-ND,,1
+C10,68uF,project_footprints:C_0402_Hand,P16816-1-ND,,1
+P14 P15 P13,SONAR_2,Pin_Headers:Pin_Header_Straight_1x04,S5479-ND,,3
+R3 R15 R17 R5 R6 R7 R8,10k,project_footprints:R_0402_Hand,311-10KJRCT-ND,,7
+F1,500mA,project_footprints:c_1206,507-1803-1-ND,,1
+C2 C4,15pF,project_footprints:C_0402_Hand,712-1261-1-ND,,2
+SW2,SW_PUSH,project_footprints:SW_SPST_PTS645,CKN9112CT-ND,,1
+SW3,SW_PUSH,project_footprints:SW_SPST_PTS645,CKN9084CT-ND,,1
+D6,RX,project_footprints:Led_0603,160-1447-1-ND,,1
+R2,330,project_footprints:R_0402_Hand,311-330JRCT-ND,,1
+U1,74AHC1G125,project_footprints:sot23-5,568-4452-1-ND,,1
+P1,USB_OTG,Connect:USB_Micro-B,609-4618-1-ND,,1
+R1,100k,project_footprints:R_0402_Hand,311-100KLRCT-ND,,1
+D7,TX,project_footprints:Led_0603,160-1448-1-ND,,1
+C7,10uF,project_footprints:C_0402_Hand,311-1376-1-ND,,1
+C8,1uF,project_footprints:C_0402_Hand,490-4516-1-ND,,1
+C13,10uF,project_footprints:C_0402_Hand,311-1729-1-ND,,1
+L2,47uH,project_footprints:I_1212,587-2104-1-ND,,1
+Q1,Q_PMOS_DSG,project_footprints:SOT23,DMG2307L-7DICT-ND,,1
+R4,47K,project_footprints:R_0402_Hand,311-47.0KLRCT-ND,,1
+R14 R13,1k,project_footprints:R_0402_Hand,311-1.0KJRCT-ND,,2
+U2,SAMD21G18,project_footprints:TQFP-48_7x7mm_Pitch0.5mm,ATSAMD21G18A-AU-ND,,1
+P2,BatteryHolder,project_footprints:Battery_3xAAA_Holder,36-2479-ND,,1
+CON1,MicroSD_Card,project_footprints:MicroSD_Card_Receptacle,114-00841-68-2-ND,,1
+L1,FB - 30Ohm,project_footprints:R_SM0603,445-2986-1-ND,,1
+C6 C9,2.2uF,project_footprints:C_0402_Hand,587-1059-1-ND,,2
