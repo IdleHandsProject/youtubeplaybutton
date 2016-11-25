@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\hodginsa\Documents\idlehandsdev\sensory_adaptation_bot\sa_bot.sch</source>
-    <date>09/05/2016 1:35:44 PM</date>
-    <tool>Eeschema (2015-07-04 BZR 5884, Git c1bbf3e)-product</tool>
+    <source>C:/Users/hodginsa/Documents/idlehandsdev/youtubeplaybutton/playbutton.sch</source>
+    <date>24/11/2016 8:46:21 PM</date>
+    <tool>Eeschema 4.0.4-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
         <company/>
         <rev/>
-        <date/>
-        <source>sa_bot.sch</source>
+        <date>2016-10-20</date>
+        <source>playbutton.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -25,7 +25,7 @@
       <fields>
         <field name="Digikey Part No.">ATSAMD21G18A-AU-ND</field>
       </fields>
-      <libsource lib="atmel" part="SAMD21G18"/>
+      <libsource lib="playbutton-cache" part="SAMD21G18"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56BE5542</tstamp>
     </comp>
@@ -102,6 +102,9 @@
     <comp ref="Y1">
       <value>Crystal_Small</value>
       <footprint>project_footprints:crystal_smd_5x3.2mm</footprint>
+      <fields>
+        <field name="Digikey Part No.">535-9536-1-ND</field>
+      </fields>
       <libsource lib="device" part="Crystal_Small"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56BE5D1C</tstamp>
@@ -148,23 +151,13 @@
     </comp>
     <comp ref="C6">
       <value>2.2uF</value>
-      <footprint>project_footprints:C_0402_Hand</footprint>
+      <footprint>idlehands_footprints:c_1206</footprint>
       <fields>
-        <field name="Digikey Part No.">587-1059-1-ND</field>
+        <field name="Digikey Part No.">1276-1291-1-ND</field>
       </fields>
       <libsource lib="device" part="C_Small"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56BE62C0</tstamp>
-    </comp>
-    <comp ref="Q1">
-      <value>Q_PMOS_DSG</value>
-      <footprint>project_footprints:SOT23</footprint>
-      <fields>
-        <field name="Digikey Part No.">DMG2307L-7DICT-ND</field>
-      </fields>
-      <libsource lib="device" part="Q_PMOS_DSG"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56BE67F8</tstamp>
     </comp>
     <comp ref="U3">
       <value>AP2112K-3.3V</value>
@@ -172,7 +165,7 @@
       <fields>
         <field name="Digikey Part No.">AP2112K-3.3TRG1DICT-ND</field>
       </fields>
-      <libsource lib="regul" part="AP2112K-3.3V"/>
+      <libsource lib="playbutton-cache" part="AP2112K-3.3V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56BE77A3</tstamp>
     </comp>
@@ -180,7 +173,7 @@
       <value>1uF</value>
       <footprint>project_footprints:C_0402_Hand</footprint>
       <fields>
-        <field name="Digikey Part No.">490-4516-1-ND</field>
+        <field name="Digikey Part No.">490-1320-1-ND</field>
       </fields>
       <libsource lib="device" part="C_Small"/>
       <sheetpath names="/" tstamps="/"/>
@@ -200,9 +193,9 @@
       <value>74AHC1G125</value>
       <footprint>project_footprints:sot23-5</footprint>
       <fields>
-        <field name="Digikey Part No.">568-4452-1-ND</field>
+        <field name="Digikey Part No.">296-8744-1-ND</field>
       </fields>
-      <libsource lib="74xx" part="74AHC1G125"/>
+      <libsource lib="playbutton-cache" part="74AHC1G125"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56BEA3D7</tstamp>
     </comp>
@@ -230,205 +223,18 @@
       <value>2.2uF</value>
       <footprint>project_footprints:C_0402_Hand</footprint>
       <fields>
-        <field name="Digikey Part No.">587-1059-1-ND</field>
+        <field name="Digikey Part No.">490-10451-1-ND</field>
       </fields>
       <libsource lib="device" part="C_Small"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56C15D54</tstamp>
     </comp>
-    <comp ref="P2">
-      <value>BatteryHolder</value>
-      <footprint>project_footprints:Battery_3xAAA_Holder</footprint>
-      <fields>
-        <field name="Digikey Part No.">36-2479-ND</field>
-      </fields>
-      <libsource lib="conn" part="CONN_01X02"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56C113D9</tstamp>
-    </comp>
-    <comp ref="U4">
-      <value>NCP1402</value>
-      <footprint>project_footprints:sot23-5</footprint>
-      <libsource lib="power" part="NCP1402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DA0DD3</tstamp>
-    </comp>
-    <comp ref="SW1">
-      <value>SWITCH_INV</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
-      <libsource lib="device" part="SWITCH_INV"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DA62FC</tstamp>
-    </comp>
-    <comp ref="P8">
-      <value>IR_2</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
-      <libsource lib="conn" part="CONN_01X03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC2445</tstamp>
-    </comp>
-    <comp ref="P14">
-      <value>SONAR_2</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
-      <fields>
-        <field name="Digikey Part No.">S5479-ND</field>
-      </fields>
-      <libsource lib="conn" part="CONN_01X04"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC244B</tstamp>
-    </comp>
-    <comp ref="P4">
-      <value>IR2_JMP</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
-      <libsource lib="conn" part="CONN_01X02"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC2463</tstamp>
-    </comp>
-    <comp ref="P9">
-      <value>IR_3</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
-      <libsource lib="conn" part="CONN_01X03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC302A</tstamp>
-    </comp>
-    <comp ref="P15">
-      <value>SONAR_3</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
-      <fields>
-        <field name="Digikey Part No.">S5479-ND</field>
-      </fields>
-      <libsource lib="conn" part="CONN_01X04"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC3030</tstamp>
-    </comp>
-    <comp ref="P5">
-      <value>IR3_JMP</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
-      <libsource lib="conn" part="CONN_01X02"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC3048</tstamp>
-    </comp>
-    <comp ref="P7">
-      <value>IR_4</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
-      <libsource lib="conn" part="CONN_01X03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC306F</tstamp>
-    </comp>
-    <comp ref="P13">
-      <value>SONAR_4</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
-      <fields>
-        <field name="Digikey Part No.">S5479-ND</field>
-      </fields>
-      <libsource lib="conn" part="CONN_01X04"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC3075</tstamp>
-    </comp>
-    <comp ref="P3">
-      <value>IR4_JMP</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
-      <libsource lib="conn" part="CONN_01X02"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DC308D</tstamp>
-    </comp>
-    <comp ref="C10">
-      <value>68uF</value>
-      <footprint>project_footprints:C_0402_Hand</footprint>
-      <fields>
-        <field name="Digikey Part No.">P16816-1-ND</field>
-      </fields>
-      <libsource lib="device" part="CP1"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DCEA93</tstamp>
-    </comp>
-    <comp ref="C7">
-      <value>10uF</value>
-      <footprint>project_footprints:C_0402_Hand</footprint>
-      <fields>
-        <field name="Digikey Part No.">311-1376-1-ND</field>
-      </fields>
-      <libsource lib="device" part="C"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DCF434</tstamp>
-    </comp>
-    <comp ref="L2">
-      <value>47uH</value>
-      <footprint>project_footprints:I_1212</footprint>
-      <fields>
-        <field name="Digikey Part No.">587-2104-1-ND</field>
-      </fields>
-      <libsource lib="device" part="L_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DCF58A</tstamp>
-    </comp>
-    <comp ref="D1">
-      <value>BAT20J</value>
-      <footprint>project_footprints:sod80c</footprint>
-      <fields>
-        <field name="Digikey Part No.">497-3381-1-ND</field>
-      </fields>
-      <libsource lib="device" part="D_Schottky_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DCF8CB</tstamp>
-    </comp>
-    <comp ref="U5">
-      <value>DRV8835</value>
-      <footprint>project_footprints:WSON-12-2x3</footprint>
-      <fields>
-        <field name="Digikey Part No.">296-30391-1-ND</field>
-      </fields>
-      <libsource lib="power" part="DRV8835"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DF8CF2</tstamp>
-    </comp>
-    <comp ref="P11">
-      <value>MOTOR_A</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
-      <libsource lib="conn" part="CONN_01X06"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DFA25D</tstamp>
-    </comp>
-    <comp ref="P12">
-      <value>MOTOR_B</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
-      <libsource lib="conn" part="CONN_01X06"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DFA5E3</tstamp>
-    </comp>
-    <comp ref="C14">
-      <value>0.1uF</value>
-      <footprint>project_footprints:C_0402_Hand</footprint>
-      <fields>
-        <field name="Digikey Part No.">490-6328-1-ND</field>
-      </fields>
-      <libsource lib="device" part="C_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DFD3A0</tstamp>
-    </comp>
-    <comp ref="C15">
-      <value>0.1uF</value>
-      <footprint>project_footprints:C_0402_Hand</footprint>
-      <fields>
-        <field name="Digikey Part No.">490-6328-1-ND</field>
-      </fields>
-      <libsource lib="device" part="C_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DFD519</tstamp>
-    </comp>
-    <comp ref="C13">
-      <value>10uF</value>
-      <footprint>project_footprints:C_0402_Hand</footprint>
-      <fields>
-        <field name="Digikey Part No.">311-1729-1-ND</field>
-      </fields>
-      <libsource lib="device" part="C_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56DFE465</tstamp>
-    </comp>
     <comp ref="P17">
       <value>DBG_CONN</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm</footprint>
+      <footprint>idlehands_footprints:Pin_Header_Straight_2x05_Pitch1.27mm</footprint>
+      <fields>
+        <field name="Digikey Part No.">1175-1629-ND</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X10"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5704E96D</tstamp>
@@ -453,7 +259,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5705BDEC</tstamp>
     </comp>
-    <comp ref="D7">
+    <comp ref="D1007">
       <value>TX</value>
       <footprint>project_footprints:Led_0603</footprint>
       <fields>
@@ -473,7 +279,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57070FC5</tstamp>
     </comp>
-    <comp ref="D6">
+    <comp ref="D1006">
       <value>RX</value>
       <footprint>project_footprints:Led_0603</footprint>
       <fields>
@@ -493,52 +299,152 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>570710A3</tstamp>
     </comp>
-    <comp ref="CON1">
-      <value>MicroSD_Card</value>
-      <footprint>project_footprints:MicroSD_Card_Receptacle</footprint>
+    <comp ref="SW4">
+      <value>SW_PUSH</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_EVQPE1</footprint>
       <fields>
-        <field name="Digikey Part No.">114-00841-68-2-ND</field>
+        <field name="Digikey Part No.">401-1702-1-ND</field>
       </fields>
-      <libsource lib="conn" part="MicroSD_Card"/>
+      <libsource lib="device" part="SW_PUSH"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57087486</tstamp>
+      <tstamp>57898945</tstamp>
     </comp>
-    <comp ref="P18">
-      <value>CONN_01X04</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
-      <libsource lib="conn" part="CONN_01X04"/>
+    <comp ref="D1001">
+      <value>D_Schottky</value>
+      <footprint>idlehands_footprints:sod80c</footprint>
+      <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57081F93</tstamp>
+      <tstamp>57F6E995</tstamp>
     </comp>
-    <comp ref="R15">
-      <value>10k</value>
+    <comp ref="U4">
+      <value>IS31FL3731</value>
+      <footprint>Housings_DFN_QFN:QFN-28-1EP_4x4mm_Pitch0.4mm</footprint>
+      <fields>
+        <field name="Digikey Part No.">706-1219-1-ND</field>
+      </fields>
+      <libsource lib="playbutton-cache" part="IS31FL3731"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813BC1D</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>0.1uF</value>
+      <footprint>project_footprints:C_0402_Hand</footprint>
+      <fields>
+        <field name="Digikey Part No.">490-6328-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814FF97</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10uF</value>
+      <footprint>project_footprints:C_SM0603</footprint>
+      <fields>
+        <field name="Digikey Part No.">490-6405-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58169A23</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>project_footprints:C_SM0603</footprint>
+      <fields>
+        <field name="Digikey Part No.">490-6405-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58169C6C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>20k</value>
       <footprint>project_footprints:R_0402_Hand</footprint>
       <fields>
-        <field name="Digikey Part No.">311-10KJRCT-ND</field>
+        <field name="Digikey Part No.">311-20KJRCT-ND</field>
       </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>571BCAF7</tstamp>
+      <tstamp>58175FB3</tstamp>
     </comp>
-    <comp ref="R17">
-      <value>10k</value>
+    <comp ref="R9">
+      <value>20k</value>
       <footprint>project_footprints:R_0402_Hand</footprint>
       <fields>
-        <field name="Digikey Part No.">311-10KJRCT-ND</field>
+        <field name="Digikey Part No.">311-20KJRCT-ND</field>
       </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>571BCC2D</tstamp>
+      <tstamp>5817E650</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>20k</value>
+      <footprint>project_footprints:R_0402_Hand</footprint>
+      <fields>
+        <field name="Digikey Part No.">311-20KJRCT-ND</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5817F1CC</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>20k</value>
+      <footprint>project_footprints:R_0402_Hand</footprint>
+      <fields>
+        <field name="Digikey Part No.">311-20KJRCT-ND</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5817FEEF</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>20k</value>
+      <footprint>project_footprints:R_0402_Hand</footprint>
+      <fields>
+        <field name="Digikey Part No.">311-20KJRCT-ND</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58182364</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>20k</value>
+      <footprint>project_footprints:R_0402_Hand</footprint>
+      <fields>
+        <field name="Digikey Part No.">311-20KJRCT-ND</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5818400B</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>0.1uF</value>
+      <footprint>project_footprints:C_0402_Hand</footprint>
+      <fields>
+        <field name="Digikey Part No.">490-6328-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581846DD</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>ESP8266</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x04</footprint>
+      <fields>
+        <field name="Digikey Part No.">S5713-ND</field>
+      </fields>
+      <libsource lib="conn" part="CONN_02X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581EAF87</tstamp>
     </comp>
     <comp ref="R5">
-      <value>10k</value>
-      <footprint>project_footprints:R_0402_Hand</footprint>
+      <value>Photores</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
       <fields>
-        <field name="Digikey Part No.">311-10KJRCT-ND</field>
+        <field name="Digikey Part No.">PDV-P9203-ND</field>
       </fields>
-      <libsource lib="device" part="R"/>
+      <libsource lib="device" part="Photores"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57261D68</tstamp>
+      <tstamp>58278EE7</tstamp>
     </comp>
     <comp ref="R6">
       <value>10k</value>
@@ -546,107 +452,1106 @@
       <fields>
         <field name="Digikey Part No.">311-10KJRCT-ND</field>
       </fields>
-      <libsource lib="device" part="R"/>
+      <libsource lib="device" part="R_Small"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57261D6E</tstamp>
+      <tstamp>582A3EF9</tstamp>
     </comp>
-    <comp ref="R7">
-      <value>10k</value>
-      <footprint>project_footprints:R_0402_Hand</footprint>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A68C</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A692</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A698</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A69E</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6A4</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6AA</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6B0</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6B6</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6BC</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6C2</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6C8</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6CE</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6D4</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6DA</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6E0</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6E6</tstamp>
+    </comp>
+    <comp ref="D34">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6EC</tstamp>
+    </comp>
+    <comp ref="D35">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6F2</tstamp>
+    </comp>
+    <comp ref="D36">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6F8</tstamp>
+    </comp>
+    <comp ref="D37">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A6FE</tstamp>
+    </comp>
+    <comp ref="D38">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A704</tstamp>
+    </comp>
+    <comp ref="D39">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A70A</tstamp>
+    </comp>
+    <comp ref="D40">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A710</tstamp>
+    </comp>
+    <comp ref="D33">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A716</tstamp>
+    </comp>
+    <comp ref="D50">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A71C</tstamp>
+    </comp>
+    <comp ref="D51">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A722</tstamp>
+    </comp>
+    <comp ref="D52">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A728</tstamp>
+    </comp>
+    <comp ref="D53">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A72E</tstamp>
+    </comp>
+    <comp ref="D54">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A734</tstamp>
+    </comp>
+    <comp ref="D55">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A73A</tstamp>
+    </comp>
+    <comp ref="D56">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A740</tstamp>
+    </comp>
+    <comp ref="D49">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A746</tstamp>
+    </comp>
+    <comp ref="D66">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A74C</tstamp>
+    </comp>
+    <comp ref="D67">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A752</tstamp>
+    </comp>
+    <comp ref="D68">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A758</tstamp>
+    </comp>
+    <comp ref="D69">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A75E</tstamp>
+    </comp>
+    <comp ref="D70">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A764</tstamp>
+    </comp>
+    <comp ref="D71">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A76A</tstamp>
+    </comp>
+    <comp ref="D72">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A770</tstamp>
+    </comp>
+    <comp ref="D65">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A776</tstamp>
+    </comp>
+    <comp ref="D82">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A77C</tstamp>
+    </comp>
+    <comp ref="D83">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A782</tstamp>
+    </comp>
+    <comp ref="D84">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A788</tstamp>
+    </comp>
+    <comp ref="D85">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A78E</tstamp>
+    </comp>
+    <comp ref="D86">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A794</tstamp>
+    </comp>
+    <comp ref="D87">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A79A</tstamp>
+    </comp>
+    <comp ref="D88">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7A0</tstamp>
+    </comp>
+    <comp ref="D81">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7A6</tstamp>
+    </comp>
+    <comp ref="D98">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7AC</tstamp>
+    </comp>
+    <comp ref="D99">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7B2</tstamp>
+    </comp>
+    <comp ref="D100">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7B8</tstamp>
+    </comp>
+    <comp ref="D101">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7BE</tstamp>
+    </comp>
+    <comp ref="D102">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7C4</tstamp>
+    </comp>
+    <comp ref="D103">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7CA</tstamp>
+    </comp>
+    <comp ref="D104">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7D0</tstamp>
+    </comp>
+    <comp ref="D97">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7D6</tstamp>
+    </comp>
+    <comp ref="D114">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7DC</tstamp>
+    </comp>
+    <comp ref="D115">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7E2</tstamp>
+    </comp>
+    <comp ref="D116">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7E8</tstamp>
+    </comp>
+    <comp ref="D117">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7EE</tstamp>
+    </comp>
+    <comp ref="D118">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7F4</tstamp>
+    </comp>
+    <comp ref="D119">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A7FA</tstamp>
+    </comp>
+    <comp ref="D120">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A800</tstamp>
+    </comp>
+    <comp ref="D113">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A806</tstamp>
+    </comp>
+    <comp ref="D130">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A80C</tstamp>
+    </comp>
+    <comp ref="D131">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A812</tstamp>
+    </comp>
+    <comp ref="D132">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A818</tstamp>
+    </comp>
+    <comp ref="D133">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A81E</tstamp>
+    </comp>
+    <comp ref="D134">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A824</tstamp>
+    </comp>
+    <comp ref="D135">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A82A</tstamp>
+    </comp>
+    <comp ref="D136">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A830</tstamp>
+    </comp>
+    <comp ref="D129">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814A836</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA56</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA5C</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA62</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA68</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA6E</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA74</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA7A</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA80</tstamp>
+    </comp>
+    <comp ref="D26">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA86</tstamp>
+    </comp>
+    <comp ref="D27">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA8C</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA92</tstamp>
+    </comp>
+    <comp ref="D29">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA98</tstamp>
+    </comp>
+    <comp ref="D30">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EA9E</tstamp>
+    </comp>
+    <comp ref="D31">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAA4</tstamp>
+    </comp>
+    <comp ref="D32">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAAA</tstamp>
+    </comp>
+    <comp ref="D25">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAB0</tstamp>
+    </comp>
+    <comp ref="D42">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAB6</tstamp>
+    </comp>
+    <comp ref="D43">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EABC</tstamp>
+    </comp>
+    <comp ref="D44">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAC2</tstamp>
+    </comp>
+    <comp ref="D45">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAC8</tstamp>
+    </comp>
+    <comp ref="D46">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EACE</tstamp>
+    </comp>
+    <comp ref="D47">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAD4</tstamp>
+    </comp>
+    <comp ref="D48">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EADA</tstamp>
+    </comp>
+    <comp ref="D41">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAE0</tstamp>
+    </comp>
+    <comp ref="D58">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAE6</tstamp>
+    </comp>
+    <comp ref="D59">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAEC</tstamp>
+    </comp>
+    <comp ref="D60">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAF2</tstamp>
+    </comp>
+    <comp ref="D61">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAF8</tstamp>
+    </comp>
+    <comp ref="D62">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EAFE</tstamp>
+    </comp>
+    <comp ref="D63">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB04</tstamp>
+    </comp>
+    <comp ref="D64">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB0A</tstamp>
+    </comp>
+    <comp ref="D57">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB10</tstamp>
+    </comp>
+    <comp ref="D74">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB16</tstamp>
+    </comp>
+    <comp ref="D75">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB1C</tstamp>
+    </comp>
+    <comp ref="D76">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB22</tstamp>
+    </comp>
+    <comp ref="D77">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB28</tstamp>
+    </comp>
+    <comp ref="D78">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB2E</tstamp>
+    </comp>
+    <comp ref="D79">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB34</tstamp>
+    </comp>
+    <comp ref="D80">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB3A</tstamp>
+    </comp>
+    <comp ref="D73">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB40</tstamp>
+    </comp>
+    <comp ref="D90">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB46</tstamp>
+    </comp>
+    <comp ref="D91">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB4C</tstamp>
+    </comp>
+    <comp ref="D92">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB52</tstamp>
+    </comp>
+    <comp ref="D93">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB58</tstamp>
+    </comp>
+    <comp ref="D94">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB5E</tstamp>
+    </comp>
+    <comp ref="D95">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB64</tstamp>
+    </comp>
+    <comp ref="D96">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB6A</tstamp>
+    </comp>
+    <comp ref="D89">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB70</tstamp>
+    </comp>
+    <comp ref="D106">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB76</tstamp>
+    </comp>
+    <comp ref="D107">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB7C</tstamp>
+    </comp>
+    <comp ref="D108">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB82</tstamp>
+    </comp>
+    <comp ref="D109">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB88</tstamp>
+    </comp>
+    <comp ref="D110">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB8E</tstamp>
+    </comp>
+    <comp ref="D111">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB94</tstamp>
+    </comp>
+    <comp ref="D112">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EB9A</tstamp>
+    </comp>
+    <comp ref="D105">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBA0</tstamp>
+    </comp>
+    <comp ref="D122">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBA6</tstamp>
+    </comp>
+    <comp ref="D123">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBAC</tstamp>
+    </comp>
+    <comp ref="D124">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBB2</tstamp>
+    </comp>
+    <comp ref="D125">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBB8</tstamp>
+    </comp>
+    <comp ref="D126">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBBE</tstamp>
+    </comp>
+    <comp ref="D127">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBC4</tstamp>
+    </comp>
+    <comp ref="D128">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBCA</tstamp>
+    </comp>
+    <comp ref="D121">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBD0</tstamp>
+    </comp>
+    <comp ref="D138">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBD6</tstamp>
+    </comp>
+    <comp ref="D139">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBDC</tstamp>
+    </comp>
+    <comp ref="D140">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBE2</tstamp>
+    </comp>
+    <comp ref="D141">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBE8</tstamp>
+    </comp>
+    <comp ref="D142">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBEE</tstamp>
+    </comp>
+    <comp ref="D143">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBF4</tstamp>
+    </comp>
+    <comp ref="D144">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EBFA</tstamp>
+    </comp>
+    <comp ref="D137">
+      <value>LED</value>
+      <footprint>idlehands_footprints:Led_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5814EC00</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_PMOS_GSD</value>
+      <footprint>idlehands_footprints:SOT23</footprint>
       <fields>
-        <field name="Digikey Part No.">311-10KJRCT-ND</field>
+        <field name="Digikey Part No.">IRLML6402PBFCT-ND</field>
       </fields>
-      <libsource lib="device" part="R"/>
+      <libsource lib="device" part="Q_PMOS_GSD"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57261E1D</tstamp>
-    </comp>
-    <comp ref="R8">
-      <value>10k</value>
-      <footprint>project_footprints:R_0402_Hand</footprint>
-      <fields>
-        <field name="Digikey Part No.">311-10KJRCT-ND</field>
-      </fields>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>57261E23</tstamp>
-    </comp>
-    <comp ref="P6">
-      <value>ExPower</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
-      <libsource lib="conn" part="CONN_01X03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5727214B</tstamp>
+      <tstamp>5817FB74</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="power" part="DRV8835">
+    <libpart lib="playbutton-cache" part="74AHC1G125">
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">DRV8835</field>
+        <field name="Value">74AHC1G125</field>
       </fields>
       <pins>
-        <pin num="1" name="VM" type="input"/>
-        <pin num="2" name="AOUT1" type="input"/>
-        <pin num="3" name="AOUT2" type="input"/>
-        <pin num="4" name="BOUT1" type="input"/>
-        <pin num="5" name="BOUT2" type="input"/>
-        <pin num="6" name="GND" type="input"/>
-        <pin num="7" name="BIN2" type="input"/>
-        <pin num="8" name="BIN1" type="input"/>
-        <pin num="9" name="AIN2" type="input"/>
-        <pin num="10" name="AIN1" type="input"/>
-        <pin num="11" name="MODE" type="input"/>
-        <pin num="12" name="VCC" type="input"/>
+        <pin num="1" name="/OE" type="input"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="Y" type="input"/>
+        <pin num="5" name="VCC" type="input"/>
+        <pin num="~" name="/OE" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="power" part="NCP1402">
+    <libpart lib="playbutton-cache" part="AP2112K-3.3V">
+      <footprints>
+        <fp>SOT*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">NCP1402</field>
+        <field name="Value">AP2112K-3.3V</field>
+        <field name="Footprint">SOT-23-5</field>
       </fields>
       <pins>
-        <pin num="1" name="CE" type="input"/>
-        <pin num="2" name="OUT" type="input"/>
-        <pin num="4" name="GND" type="input"/>
-        <pin num="5" name="LX" type="input"/>
-        <pin num="NC" name="3" type="input"/>
+        <pin num="1" name="IN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="5" name="OUT" type="power_out"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="C">
-      <description>Unpolarized capacitor</description>
+    <libpart lib="conn" part="CONN_01X10">
+      <description>Connector, single row, 01x10</description>
       <footprints>
-        <fp>C?</fp>
-        <fp>C_????_*</fp>
-        <fp>C_????</fp>
-        <fp>SMD*_c</fp>
-        <fp>Capacitor*</fp>
+        <fp>Pin_Header_Straight_1X10</fp>
+        <fp>Pin_Header_Angled_1X10</fp>
+        <fp>Socket_Strip_Straight_1X10</fp>
+        <fp>Socket_Strip_Angled_1X10</fp>
       </footprints>
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C</field>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X10</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="CP1">
-      <description>Polarised capacitor</description>
+    <libpart lib="conn" part="CONN_02X04">
+      <description>Connector, double row, 02x04</description>
       <footprints>
-        <fp>SMD*_Pol</fp>
-        <fp>c_elec*</fp>
-        <fp>C*elec</fp>
-        <fp>TantalC*</fp>
-        <fp>Elko*</fp>
-        <fp>CP*</fp>
+        <fp>Pin_Header_Straight_2X04</fp>
+        <fp>Pin_Header_Angled_2X04</fp>
+        <fp>Socket_Strip_Straight_2X04</fp>
+        <fp>Socket_Strip_Angled_2X04</fp>
       </footprints>
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">CP1</field>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_02X04</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="C_Small">
@@ -681,18 +1586,18 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="D_Schottky_Small">
-      <description>Diode Schottky</description>
+    <libpart lib="device" part="D_Schottky">
+      <description>Diode schottky</description>
       <footprints>
-        <fp>Diode_*</fp>
         <fp>D-Pak_TO252AA</fp>
+        <fp>Diode_*</fp>
         <fp>*SingleDiode</fp>
         <fp>*SingleDiode*</fp>
         <fp>*_Diode_*</fp>
       </footprints>
       <fields>
         <field name="Reference">D</field>
-        <field name="Value">D_Schottky_Small</field>
+        <field name="Value">D_Schottky</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -715,6 +1620,10 @@
       </pins>
     </libpart>
     <libpart lib="device" part="INDUCTOR_SMALL">
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+      </footprints>
       <fields>
         <field name="Reference">L</field>
         <field name="Value">INDUCTOR_SMALL</field>
@@ -724,26 +1633,62 @@
         <pin num="2" name="2" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="L_Small">
-      <description>Inductor</description>
-      <footprints>
-        <fp>CP*</fp>
-        <fp>SM*</fp>
-      </footprints>
+    <libpart lib="playbutton-cache" part="IS31FL3731">
+      <description>MATRIX LED DRIVER</description>
       <fields>
-        <field name="Reference">L</field>
-        <field name="Value">L_Small</field>
+        <field name="Reference">U</field>
+        <field name="Value">IS31FL3731</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="CA9" type="input"/>
+        <pin num="2" name="VCC" type="input"/>
+        <pin num="3" name="SHUTDOWN" type="input"/>
+        <pin num="4" name="INTB" type="input"/>
+        <pin num="5" name="GND" type="input"/>
+        <pin num="6" name="R_EXT" type="input"/>
+        <pin num="7" name="CB1" type="input"/>
+        <pin num="8" name="CB2" type="input"/>
+        <pin num="9" name="CB3" type="input"/>
+        <pin num="10" name="CB4" type="input"/>
+        <pin num="11" name="CB5" type="input"/>
+        <pin num="12" name="CB6" type="input"/>
+        <pin num="13" name="CB7" type="input"/>
+        <pin num="14" name="CB8" type="input"/>
+        <pin num="15" name="CB9" type="input"/>
+        <pin num="16" name="C_FILT" type="input"/>
+        <pin num="17" name="~" type="input"/>
+        <pin num="18" name="ADDR" type="input"/>
+        <pin num="19" name="SDA" type="input"/>
+        <pin num="20" name="SCL" type="input"/>
+        <pin num="21" name="CA1" type="input"/>
+        <pin num="22" name="CA2" type="input"/>
+        <pin num="23" name="CA3" type="input"/>
+        <pin num="24" name="CA4" type="input"/>
+        <pin num="25" name="CA5" type="input"/>
+        <pin num="26" name="CA6" type="input"/>
+        <pin num="27" name="CA7" type="input"/>
+        <pin num="28" name="CA8" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-*</fp>
+        <fp>LED_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="Led_Small">
       <description>Led</description>
       <footprints>
-        <fp>CP*</fp>
-        <fp>SM*</fp>
+        <fp>LED-*</fp>
+        <fp>LED_*</fp>
       </footprints>
       <fields>
         <field name="Reference">D</field>
@@ -754,16 +1699,30 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Q_PMOS_DSG">
+    <libpart lib="device" part="Photores">
+      <footprints>
+        <fp>R?</fp>
+        <fp>R?-*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Photores</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_PMOS_GSD">
       <description>Transistor P-MOSFET (general)</description>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">Q_PMOS_DSG</field>
+        <field name="Value">Q_PMOS_GSD</field>
       </fields>
       <pins>
-        <pin num="1" name="D" type="passive"/>
+        <pin num="1" name="G" type="input"/>
         <pin num="2" name="S" type="passive"/>
-        <pin num="3" name="G" type="input"/>
+        <pin num="3" name="D" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="R">
@@ -796,203 +1755,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="SWITCH_INV">
-      <description>Switch inverseur</description>
-      <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SWITCH_INV</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="SW_PUSH">
-      <description>Push Button</description>
-      <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SW_PUSH</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X02">
-      <footprints>
-        <fp>Pin_Header_Straight_1X02</fp>
-        <fp>Pin_Header_Angled_1X02</fp>
-        <fp>Socket_Strip_Straight_1X02</fp>
-        <fp>Socket_Strip_Angled_1X02</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X02</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X03">
-      <footprints>
-        <fp>Pin_Header_Straight_1X03</fp>
-        <fp>Pin_Header_Angled_1X03</fp>
-        <fp>Socket_Strip_Straight_1X03</fp>
-        <fp>Socket_Strip_Angled_1X03</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X04">
-      <footprints>
-        <fp>Pin_Header_Straight_1X04</fp>
-        <fp>Pin_Header_Angled_1X04</fp>
-        <fp>Socket_Strip_Straight_1X04</fp>
-        <fp>Socket_Strip_Angled_1X04</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X04</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X06">
-      <footprints>
-        <fp>Pin_Header_Straight_1X06</fp>
-        <fp>Pin_Header_Angled_1X06</fp>
-        <fp>Socket_Strip_Straight_1X06</fp>
-        <fp>Socket_Strip_Angled_1X06</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X06</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-        <pin num="5" name="P5" type="passive"/>
-        <pin num="6" name="P6" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X10">
-      <footprints>
-        <fp>Pin_Header_Straight_1X10</fp>
-        <fp>Pin_Header_Angled_1X10</fp>
-        <fp>Socket_Strip_Straight_1X10</fp>
-        <fp>Socket_Strip_Angled_1X10</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X10</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-        <pin num="5" name="P5" type="passive"/>
-        <pin num="6" name="P6" type="passive"/>
-        <pin num="7" name="P7" type="passive"/>
-        <pin num="8" name="P8" type="passive"/>
-        <pin num="9" name="P9" type="passive"/>
-        <pin num="10" name="P10" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="MicroSD_Card">
-      <description>SD Card Reader</description>
-      <docs>http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf</docs>
-      <footprints>
-        <fp>SD_Card_Receptacle</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">CON</field>
-        <field name="Value">MicroSD_Card</field>
-        <field name="Footprint">10067847-001</field>
-      </fields>
-      <pins>
-        <pin num="1" name="DNC" type="input"/>
-        <pin num="2" name="CS" type="input"/>
-        <pin num="3" name="MOSI" type="input"/>
-        <pin num="4" name="VDD" type="input"/>
-        <pin num="5" name="CLK" type="input"/>
-        <pin num="6" name="VSS" type="input"/>
-        <pin num="7" name="MISO" type="input"/>
-        <pin num="8" name="RES" type="input"/>
-        <pin num="9" name="SHELL1" type="input"/>
-        <pin num="10" name="CARD_DETECT" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="USB_OTG">
-      <description>USB OTG micro/mini connector</description>
-      <footprints>
-        <fp>USB*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">USB_OTG</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VCC" type="power_out"/>
-        <pin num="2" name="D-" type="passive"/>
-        <pin num="3" name="D+" type="passive"/>
-        <pin num="4" name="ID" type="power_in"/>
-        <pin num="5" name="GND" type="power_in"/>
-        <pin num="6" name="shield" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="regul" part="AP2112K-3.3V">
-      <description>AP2112 600mA CMOS LDO REGULATOR WITH ENABLe SOT-23-5</description>
-      <docs>http://www.diodes.com/_files/datasheets/AP2112.pdf</docs>
-      <footprints>
-        <fp>SOT*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">AP2112K-3.3V</field>
-        <field name="Footprint">SOT-23-5</field>
-      </fields>
-      <pins>
-        <pin num="1" name="IN" type="input"/>
-        <pin num="2" name="GND" type="power_in"/>
-        <pin num="3" name="EN" type="input"/>
-        <pin num="5" name="OUT" type="power_out"/>
-      </pins>
-    </libpart>
-    <libpart lib="74xx" part="74AHC1G125">
-      <description>74AHC1G125 - Bus buffer/line driver; 3-state</description>
-      <docs>http://www.nxp.com/documents/data_sheet/74AHC_AHCT1G125.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">74AHC1G125</field>
-      </fields>
-      <pins>
-        <pin num="1" name="/OE" type="input"/>
-        <pin num="2" name="A" type="input"/>
-        <pin num="3" name="GND" type="input"/>
-        <pin num="4" name="Y" type="input"/>
-        <pin num="5" name="VCC" type="input"/>
-        <pin num="~" name="/OE" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="atmel" part="SAMD21G18">
-      <description>SAMD20G14A-M, QFN48, 16K Flash, 2K RAM, 48MHz, CortexM0+</description>
-      <docs>http://www.atmel.com/Images/Atmel-42129-SAM-D20_Datasheet.pdf</docs>
+    <libpart lib="playbutton-cache" part="SAMD21G18">
       <footprints>
         <fp>QFN48</fp>
       </footprints>
@@ -1052,401 +1815,681 @@
         <pin num="48" name="PB03/AIN11/Y9/SERCOM5P1/TC6WO1" type="BiDi"/>
       </pins>
     </libpart>
+    <libpart lib="device" part="SW_PUSH">
+      <description>Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_OTG">
+      <description>USB micro/mini connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_OTG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="shield" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="power">
-      <uri>C:\KiCad\share\kicad\library\power.lib</uri>
-    </library>
     <library logical="device">
       <uri>C:\KiCad\share\kicad\library\device.lib</uri>
     </library>
     <library logical="conn">
       <uri>C:\KiCad\share\kicad\library\conn.lib</uri>
     </library>
-    <library logical="regul">
-      <uri>C:\KiCad\share\kicad\library\regul.lib</uri>
-    </library>
-    <library logical="74xx">
-      <uri>C:\KiCad\share\kicad\library\74xx.lib</uri>
-    </library>
-    <library logical="atmel">
-      <uri>C:\KiCad\share\kicad\library\atmel.lib</uri>
+    <library logical="playbutton-cache">
+      <uri>C:\Users\hodginsa\Documents\idlehandsdev\youtubeplaybutton\playbutton-cache.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/IR3">
-      <node ref="U2" pin="9"/>
-      <node ref="P9" pin="1"/>
+    <net code="1" name="/CB1">
+      <node ref="D137" pin="2"/>
+      <node ref="D12" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D73" pin="2"/>
+      <node ref="D14" pin="1"/>
+      <node ref="D15" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="D16" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D89" pin="2"/>
+      <node ref="D25" pin="2"/>
+      <node ref="D57" pin="2"/>
+      <node ref="D105" pin="2"/>
+      <node ref="D10" pin="1"/>
+      <node ref="D41" pin="2"/>
+      <node ref="U4" pin="7"/>
+      <node ref="D121" pin="2"/>
     </net>
-    <net code="2" name="Net-(P5-Pad2)">
-      <node ref="P9" pin="3"/>
-      <node ref="P5" pin="2"/>
+    <net code="2" name="/GPIO2">
+      <node ref="P3" pin="6"/>
+      <node ref="U2" pin="11"/>
     </net>
-    <net code="3" name="+3V3">
-      <node ref="CON1" pin="4"/>
-      <node ref="U2" pin="36"/>
-      <node ref="C3" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="C11" pin="1"/>
-      <node ref="L1" pin="1"/>
-      <node ref="U2" pin="17"/>
-      <node ref="P17" pin="1"/>
-      <node ref="U2" pin="44"/>
-      <node ref="U3" pin="5"/>
-      <node ref="P11" pin="3"/>
-      <node ref="P12" pin="3"/>
-      <node ref="C15" pin="1"/>
-      <node ref="U5" pin="12"/>
-      <node ref="C9" pin="1"/>
+    <net code="3" name="/RESET_ESP">
+      <node ref="P3" pin="4"/>
+      <node ref="U2" pin="13"/>
     </net>
-    <net code="4" name="VBATT">
-      <node ref="SW1" pin="1"/>
-      <node ref="P2" pin="2"/>
+    <net code="4" name="/CH_PD">
+      <node ref="P3" pin="5"/>
+      <node ref="U2" pin="12"/>
     </net>
-    <net code="5" name="Net-(P3-Pad2)">
-      <node ref="P3" pin="2"/>
-      <node ref="P7" pin="3"/>
+    <net code="5" name="/GPIO0">
+      <node ref="U2" pin="14"/>
+      <node ref="P3" pin="3"/>
     </net>
-    <net code="6" name="Net-(P4-Pad2)">
-      <node ref="P4" pin="2"/>
-      <node ref="P8" pin="3"/>
+    <net code="6" name="SCL">
+      <node ref="R9" pin="1"/>
+      <node ref="U4" pin="20"/>
+      <node ref="U2" pin="32"/>
     </net>
-    <net code="7" name="/IR2">
-      <node ref="P8" pin="1"/>
-      <node ref="U2" pin="7"/>
+    <net code="7" name="SDA">
+      <node ref="U4" pin="19"/>
+      <node ref="U2" pin="31"/>
+      <node ref="R10" pin="1"/>
     </net>
-    <net code="8" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="L2" pin="2"/>
+    <net code="8" name="/CB2">
+      <node ref="D74" pin="2"/>
+      <node ref="D58" pin="2"/>
+      <node ref="D122" pin="2"/>
+      <node ref="D106" pin="2"/>
+      <node ref="D25" pin="1"/>
+      <node ref="D90" pin="2"/>
+      <node ref="D32" pin="1"/>
+      <node ref="D42" pin="2"/>
+      <node ref="D138" pin="2"/>
+      <node ref="U4" pin="8"/>
+      <node ref="D31" pin="1"/>
+      <node ref="D26" pin="1"/>
+      <node ref="D30" pin="1"/>
+      <node ref="D29" pin="1"/>
+      <node ref="D28" pin="1"/>
+      <node ref="D27" pin="1"/>
+      <node ref="D9" pin="2"/>
     </net>
-    <net code="9" name="/BM2">
-      <node ref="U5" pin="5"/>
-      <node ref="P12" pin="2"/>
+    <net code="9" name="/CB8">
+      <node ref="D111" pin="2"/>
+      <node ref="D31" pin="2"/>
+      <node ref="D127" pin="1"/>
+      <node ref="D128" pin="1"/>
+      <node ref="D121" pin="1"/>
+      <node ref="D15" pin="2"/>
+      <node ref="D126" pin="1"/>
+      <node ref="D144" pin="2"/>
+      <node ref="D125" pin="1"/>
+      <node ref="U4" pin="14"/>
+      <node ref="D124" pin="1"/>
+      <node ref="D123" pin="1"/>
+      <node ref="D122" pin="1"/>
+      <node ref="D47" pin="2"/>
+      <node ref="D95" pin="2"/>
+      <node ref="D79" pin="2"/>
+      <node ref="D63" pin="2"/>
     </net>
-    <net code="10" name="/BM1">
-      <node ref="P12" pin="1"/>
-      <node ref="U5" pin="4"/>
+    <net code="10" name="/CB7">
+      <node ref="D143" pin="2"/>
+      <node ref="D46" pin="2"/>
+      <node ref="D30" pin="2"/>
+      <node ref="D106" pin="1"/>
+      <node ref="D108" pin="1"/>
+      <node ref="D109" pin="1"/>
+      <node ref="D110" pin="1"/>
+      <node ref="D111" pin="1"/>
+      <node ref="D78" pin="2"/>
+      <node ref="D112" pin="1"/>
+      <node ref="D107" pin="1"/>
+      <node ref="D94" pin="2"/>
+      <node ref="U4" pin="13"/>
+      <node ref="D14" pin="2"/>
+      <node ref="D127" pin="2"/>
+      <node ref="D105" pin="1"/>
+      <node ref="D62" pin="2"/>
     </net>
-    <net code="11" name="/AM2">
-      <node ref="U5" pin="3"/>
-      <node ref="P11" pin="2"/>
+    <net code="11" name="/CB6">
+      <node ref="D13" pin="2"/>
+      <node ref="D77" pin="2"/>
+      <node ref="D29" pin="2"/>
+      <node ref="D142" pin="2"/>
+      <node ref="D96" pin="1"/>
+      <node ref="U4" pin="12"/>
+      <node ref="D92" pin="1"/>
+      <node ref="D91" pin="1"/>
+      <node ref="D93" pin="1"/>
+      <node ref="D90" pin="1"/>
+      <node ref="D45" pin="2"/>
+      <node ref="D126" pin="2"/>
+      <node ref="D94" pin="1"/>
+      <node ref="D61" pin="2"/>
+      <node ref="D95" pin="1"/>
+      <node ref="D110" pin="2"/>
+      <node ref="D89" pin="1"/>
     </net>
-    <net code="12" name="/AM1">
-      <node ref="P11" pin="1"/>
-      <node ref="U5" pin="2"/>
+    <net code="12" name="/CB5">
+      <node ref="D75" pin="1"/>
+      <node ref="D74" pin="1"/>
+      <node ref="U4" pin="11"/>
+      <node ref="D125" pin="2"/>
+      <node ref="D73" pin="1"/>
+      <node ref="D109" pin="2"/>
+      <node ref="D79" pin="1"/>
+      <node ref="D78" pin="1"/>
+      <node ref="D77" pin="1"/>
+      <node ref="D80" pin="1"/>
+      <node ref="D93" pin="2"/>
+      <node ref="D60" pin="2"/>
+      <node ref="D141" pin="2"/>
+      <node ref="D76" pin="1"/>
+      <node ref="D44" pin="2"/>
+      <node ref="D12" pin="2"/>
+      <node ref="D28" pin="2"/>
     </net>
-    <net code="13" name="/IR4">
-      <node ref="U2" pin="8"/>
-      <node ref="P7" pin="1"/>
+    <net code="13" name="/CB3">
+      <node ref="D75" pin="2"/>
+      <node ref="D123" pin="2"/>
+      <node ref="D10" pin="2"/>
+      <node ref="D59" pin="2"/>
+      <node ref="D42" pin="1"/>
+      <node ref="D43" pin="1"/>
+      <node ref="D91" pin="2"/>
+      <node ref="D26" pin="2"/>
+      <node ref="D41" pin="1"/>
+      <node ref="D48" pin="1"/>
+      <node ref="D47" pin="1"/>
+      <node ref="D46" pin="1"/>
+      <node ref="D45" pin="1"/>
+      <node ref="D44" pin="1"/>
+      <node ref="D139" pin="2"/>
+      <node ref="U4" pin="9"/>
+      <node ref="D107" pin="2"/>
     </net>
-    <net code="14" name="/RXI">
-      <node ref="P18" pin="2"/>
-      <node ref="U2" pin="16"/>
+    <net code="14" name="/CB9">
+      <node ref="D48" pin="2"/>
+      <node ref="D144" pin="1"/>
+      <node ref="D32" pin="2"/>
+      <node ref="D80" pin="2"/>
+      <node ref="D96" pin="2"/>
+      <node ref="D112" pin="2"/>
+      <node ref="D16" pin="2"/>
+      <node ref="D139" pin="1"/>
+      <node ref="D141" pin="1"/>
+      <node ref="U4" pin="15"/>
+      <node ref="D140" pin="1"/>
+      <node ref="D142" pin="1"/>
+      <node ref="D64" pin="2"/>
+      <node ref="D128" pin="2"/>
+      <node ref="D137" pin="1"/>
+      <node ref="D138" pin="1"/>
+      <node ref="D143" pin="1"/>
     </net>
-    <net code="15" name="/TXO">
-      <node ref="U2" pin="15"/>
-      <node ref="P18" pin="1"/>
+    <net code="15" name="/CB4">
+      <node ref="D62" pin="1"/>
+      <node ref="D11" pin="2"/>
+      <node ref="D43" pin="2"/>
+      <node ref="D124" pin="2"/>
+      <node ref="D108" pin="2"/>
+      <node ref="D92" pin="2"/>
+      <node ref="D57" pin="1"/>
+      <node ref="D58" pin="1"/>
+      <node ref="D64" pin="1"/>
+      <node ref="D59" pin="1"/>
+      <node ref="D63" pin="1"/>
+      <node ref="D60" pin="1"/>
+      <node ref="D61" pin="1"/>
+      <node ref="D76" pin="2"/>
+      <node ref="U4" pin="10"/>
+      <node ref="D140" pin="2"/>
+      <node ref="D27" pin="2"/>
     </net>
-    <net code="16" name="Net-(C5-Pad1)">
+    <net code="16" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="17" name="Net-(C5-Pad1)">
       <node ref="C5" pin="1"/>
       <node ref="U2" pin="43"/>
     </net>
-    <net code="17" name="Net-(C1-Pad1)">
-      <node ref="U2" pin="6"/>
-      <node ref="L1" pin="2"/>
-      <node ref="C1" pin="1"/>
-    </net>
-    <net code="18" name="Net-(Q1-Pad3)">
-      <node ref="Q1" pin="3"/>
-      <node ref="R4" pin="2"/>
-      <node ref="U1" pin="4"/>
-    </net>
-    <net code="19" name="Net-(F1-Pad1)">
-      <node ref="F1" pin="1"/>
+    <net code="18" name="Net-(F1-Pad1)">
       <node ref="P1" pin="1"/>
+      <node ref="F1" pin="1"/>
     </net>
-    <net code="20" name="VCOM">
+    <net code="19" name="+3V3">
+      <node ref="R9" pin="2"/>
+      <node ref="D1006" pin="2"/>
+      <node ref="D1007" pin="2"/>
+      <node ref="U3" pin="5"/>
+      <node ref="P17" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="P3" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="U2" pin="44"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U2" pin="36"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U2" pin="17"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C12" pin="1"/>
+    </net>
+    <net code="20" name="Net-(D1006-Pad1)">
+      <node ref="D1006" pin="1"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="21" name="Net-(D1007-Pad1)">
+      <node ref="R14" pin="2"/>
+      <node ref="D1007" pin="1"/>
+    </net>
+    <net code="22" name="/BUT2">
+      <node ref="SW3" pin="1"/>
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="23" name="/BUT1">
+      <node ref="U2" pin="47"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="24" name="SBATT">
+      <node ref="D1001" pin="2"/>
+    </net>
+    <net code="25" name="VCOM">
+      <node ref="Q1" pin="3"/>
       <node ref="F1" pin="2"/>
-      <node ref="Q1" pin="1"/>
       <node ref="C6" pin="1"/>
     </net>
-    <net code="21" name="USB_D-">
+    <net code="26" name="RESET">
+      <node ref="SW4" pin="1"/>
+      <node ref="P17" pin="10"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U2" pin="40"/>
+    </net>
+    <net code="27" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="28" name="SWDIO">
+      <node ref="P17" pin="2"/>
+      <node ref="U2" pin="46"/>
+    </net>
+    <net code="29" name="SWCLK">
+      <node ref="P17" pin="4"/>
+      <node ref="U2" pin="45"/>
+    </net>
+    <net code="30" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="31" name="/PHOTO">
+      <node ref="U2" pin="9"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="32" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="33" name="Net-(U2-Pad30)">
+      <node ref="U2" pin="30"/>
+    </net>
+    <net code="34" name="Net-(U2-Pad29)">
+      <node ref="U2" pin="29"/>
+    </net>
+    <net code="35" name="Net-(U2-Pad23)">
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="36" name="Net-(U2-Pad24)">
+      <node ref="U2" pin="24"/>
+    </net>
+    <net code="37" name="USB_ID">
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="P1" pin="4"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="38" name="USB_D+">
+      <node ref="U2" pin="34"/>
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="39" name="USB_D-">
       <node ref="P1" pin="2"/>
       <node ref="U2" pin="33"/>
     </net>
-    <net code="22" name="USB_D+">
-      <node ref="P1" pin="3"/>
-      <node ref="U2" pin="34"/>
+    <net code="40" name="Net-(Q1-Pad1)">
+      <node ref="U1" pin="4"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="R4" pin="2"/>
     </net>
-    <net code="23" name="USB_HOST_EN">
+    <net code="41" name="VCC">
+      <node ref="R1" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="D1001" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="42" name="Net-(C4-Pad1)">
+      <node ref="Y1" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="43" name="/TXLED">
+      <node ref="U2" pin="39"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="44" name="/SPI_MOSI">
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="45" name="/RXLED">
+      <node ref="R13" pin="1"/>
+      <node ref="U2" pin="48"/>
+    </net>
+    <net code="46" name="Net-(U2-Pad38)">
+      <node ref="U2" pin="38"/>
+    </net>
+    <net code="47" name="Net-(U2-Pad28)">
+      <node ref="U2" pin="28"/>
+    </net>
+    <net code="48" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="49" name="/SPI_CLK">
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="50" name="Net-(U2-Pad22)">
+      <node ref="U2" pin="22"/>
+    </net>
+    <net code="51" name="USB_HOST_EN">
       <node ref="R2" pin="2"/>
       <node ref="U2" pin="41"/>
     </net>
-    <net code="24" name="USB_ID">
-      <node ref="R2" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="U1" pin="2"/>
-      <node ref="P1" pin="4"/>
-    </net>
-    <net code="25" name="/HVECHO2">
-      <node ref="R15" pin="2"/>
-      <node ref="P14" pin="2"/>
-    </net>
-    <net code="26" name="/TRIG2">
-      <node ref="P14" pin="3"/>
-      <node ref="U2" pin="13"/>
-    </net>
-    <net code="27" name="/TRIG3">
-      <node ref="U2" pin="30"/>
-      <node ref="P15" pin="3"/>
-    </net>
-    <net code="28" name="/TRIG4">
-      <node ref="P13" pin="3"/>
-      <node ref="U2" pin="32"/>
-    </net>
-    <net code="29" name="/ECHO2">
-      <node ref="R15" pin="1"/>
-      <node ref="U2" pin="14"/>
-      <node ref="R17" pin="2"/>
-    </net>
-    <net code="30" name="/ECHO3">
-      <node ref="R5" pin="1"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U2" pin="29"/>
-    </net>
-    <net code="31" name="/ECHO4">
-      <node ref="R8" pin="2"/>
-      <node ref="U2" pin="31"/>
-      <node ref="R7" pin="1"/>
-    </net>
-    <net code="32" name="/SD_CS">
-      <node ref="U2" pin="23"/>
-      <node ref="CON1" pin="1"/>
-    </net>
-    <net code="33" name="/SPI_MOSI">
-      <node ref="U2" pin="19"/>
-      <node ref="CON1" pin="2"/>
-    </net>
-    <net code="34" name="/SPI_SCK">
-      <node ref="U2" pin="20"/>
-      <node ref="CON1" pin="5"/>
-    </net>
-    <net code="35" name="/SPI_MISO">
-      <node ref="CON1" pin="7"/>
+    <net code="52" name="Net-(U2-Pad21)">
       <node ref="U2" pin="21"/>
     </net>
-    <net code="36" name="GND">
-      <node ref="C8" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="P13" pin="1"/>
-      <node ref="U1" pin="3"/>
-      <node ref="U5" pin="6"/>
-      <node ref="C9" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="P12" pin="6"/>
-      <node ref="P11" pin="6"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="U3" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="SW3" pin="2"/>
-      <node ref="SW2" pin="2"/>
-      <node ref="U2" pin="18"/>
-      <node ref="U2" pin="5"/>
-      <node ref="C2" pin="2"/>
-      <node ref="U2" pin="42"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U2" pin="35"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="P1" pin="5"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="P9" pin="2"/>
-      <node ref="P15" pin="1"/>
-      <node ref="R13" pin="1"/>
-      <node ref="P7" pin="2"/>
-      <node ref="P2" pin="1"/>
-      <node ref="R14" pin="1"/>
-      <node ref="U4" pin="4"/>
-      <node ref="P18" pin="3"/>
-      <node ref="CON1" pin="6"/>
-      <node ref="P8" pin="2"/>
-      <node ref="P14" pin="1"/>
-      <node ref="CON1" pin="3"/>
-      <node ref="P17" pin="5"/>
-      <node ref="P17" pin="3"/>
-      <node ref="R6" pin="1"/>
-      <node ref="R8" pin="1"/>
-      <node ref="P6" pin="2"/>
-      <node ref="R17" pin="1"/>
+    <net code="53" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
     </net>
-    <net code="37" name="Net-(U2-Pad4)">
+    <net code="54" name="Net-(U2-Pad4)">
       <node ref="U2" pin="4"/>
     </net>
-    <net code="38" name="/AENC1">
-      <node ref="U2" pin="10"/>
-      <node ref="P11" pin="4"/>
-    </net>
-    <net code="39" name="Net-(U2-Pad22)">
-      <node ref="U2" pin="22"/>
-    </net>
-    <net code="40" name="/AENC2">
-      <node ref="P11" pin="5"/>
-      <node ref="U2" pin="47"/>
-    </net>
-    <net code="41" name="/NC">
-      <node ref="U4" pin="NC"/>
-    </net>
-    <net code="42" name="SBATT">
-      <node ref="C14" pin="1"/>
-      <node ref="P6" pin="3"/>
-      <node ref="C7" pin="1"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="C13" pin="1"/>
-      <node ref="U5" pin="1"/>
-      <node ref="L2" pin="1"/>
-    </net>
-    <net code="43" name="/HVECHO4">
-      <node ref="R7" pin="2"/>
-      <node ref="P13" pin="2"/>
-    </net>
-    <net code="44" name="VCC">
-      <node ref="C10" pin="1"/>
-      <node ref="P13" pin="4"/>
-      <node ref="D1" pin="1"/>
-      <node ref="P3" pin="1"/>
-      <node ref="P4" pin="1"/>
-      <node ref="P15" pin="4"/>
-      <node ref="P5" pin="1"/>
-      <node ref="U4" pin="1"/>
-      <node ref="P14" pin="4"/>
-      <node ref="U4" pin="2"/>
-      <node ref="P6" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="P18" pin="4"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="U3" pin="1"/>
-      <node ref="U3" pin="3"/>
-      <node ref="U1" pin="5"/>
-      <node ref="R4" pin="1"/>
-      <node ref="C8" pin="1"/>
-    </net>
-    <net code="45" name="/HVECHO3">
-      <node ref="P15" pin="2"/>
-      <node ref="R5" pin="2"/>
-    </net>
-    <net code="46" name="Net-(U5-Pad11)">
-      <node ref="U5" pin="11"/>
-    </net>
-    <net code="47" name="/IR1">
-      <node ref="U2" pin="3"/>
-    </net>
-    <net code="48" name="/BUT1">
-      <node ref="U2" pin="25"/>
-      <node ref="SW2" pin="1"/>
-    </net>
-    <net code="49" name="/BENC1">
-      <node ref="P12" pin="4"/>
-      <node ref="U2" pin="27"/>
-    </net>
-    <net code="50" name="/BENC2">
-      <node ref="P12" pin="5"/>
-      <node ref="U2" pin="28"/>
-    </net>
-    <net code="51" name="/BUT2">
-      <node ref="U2" pin="26"/>
-      <node ref="SW3" pin="1"/>
-    </net>
-    <net code="52" name="/RXLED">
-      <node ref="U2" pin="48"/>
-      <node ref="D6" pin="2"/>
-    </net>
-    <net code="53" name="Net-(D7-Pad1)">
-      <node ref="R14" pin="2"/>
-      <node ref="D7" pin="1"/>
-    </net>
-    <net code="54" name="Net-(D6-Pad1)">
-      <node ref="R13" pin="2"/>
-      <node ref="D6" pin="1"/>
-    </net>
-    <net code="55" name="RESET">
-      <node ref="R3" pin="2"/>
-      <node ref="P17" pin="10"/>
-      <node ref="U2" pin="40"/>
-    </net>
-    <net code="56" name="Net-(U2-Pad24)">
-      <node ref="U2" pin="24"/>
-    </net>
-    <net code="57" name="/BIN2">
-      <node ref="U5" pin="7"/>
-      <node ref="U2" pin="11"/>
-    </net>
-    <net code="58" name="/BIN1">
-      <node ref="U2" pin="12"/>
-      <node ref="U5" pin="8"/>
-    </net>
-    <net code="59" name="Net-(U2-Pad37)">
+    <net code="55" name="Net-(U2-Pad37)">
       <node ref="U2" pin="37"/>
     </net>
-    <net code="60" name="Net-(U2-Pad38)">
-      <node ref="U2" pin="38"/>
+    <net code="56" name="Net-(U2-Pad26)">
+      <node ref="U2" pin="26"/>
     </net>
-    <net code="61" name="/TXLED">
-      <node ref="D7" pin="2"/>
-      <node ref="U2" pin="39"/>
+    <net code="57" name="/RXI">
+      <node ref="P3" pin="8"/>
+      <node ref="U2" pin="16"/>
     </net>
-    <net code="62" name="SWCLK">
-      <node ref="P17" pin="4"/>
-      <node ref="U5" pin="9"/>
-      <node ref="U2" pin="45"/>
+    <net code="58" name="Net-(U2-Pad25)">
+      <node ref="U2" pin="25"/>
     </net>
-    <net code="63" name="SWDIO">
-      <node ref="U2" pin="46"/>
-      <node ref="P17" pin="2"/>
-      <node ref="U5" pin="10"/>
+    <net code="59" name="/TXO">
+      <node ref="U2" pin="15"/>
+      <node ref="P3" pin="1"/>
     </net>
-    <net code="64" name="Net-(SW1-Pad3)">
-      <node ref="SW1" pin="3"/>
-    </net>
-    <net code="65" name="Net-(P1-Pad6)">
-      <node ref="P1" pin="6"/>
-    </net>
-    <net code="66" name="Net-(C4-Pad1)">
-      <node ref="C4" pin="1"/>
-      <node ref="U2" pin="2"/>
-      <node ref="Y1" pin="1"/>
-    </net>
-    <net code="67" name="Net-(C2-Pad1)">
-      <node ref="Y1" pin="2"/>
-      <node ref="U2" pin="1"/>
-      <node ref="C2" pin="1"/>
-    </net>
-    <net code="68" name="Net-(P17-Pad6)">
-      <node ref="P17" pin="6"/>
-    </net>
-    <net code="69" name="Net-(P17-Pad7)">
-      <node ref="P17" pin="7"/>
-    </net>
-    <net code="70" name="Net-(P17-Pad8)">
-      <node ref="P17" pin="8"/>
-    </net>
-    <net code="71" name="Net-(P17-Pad9)">
+    <net code="60" name="Net-(P17-Pad9)">
       <node ref="P17" pin="9"/>
     </net>
-    <net code="72" name="Net-(CON1-Pad8)">
-      <node ref="CON1" pin="8"/>
+    <net code="61" name="Net-(P17-Pad8)">
+      <node ref="P17" pin="8"/>
     </net>
-    <net code="74" name="Net-(CON1-Pad9)">
-      <node ref="CON1" pin="9"/>
+    <net code="62" name="Net-(P17-Pad7)">
+      <node ref="P17" pin="7"/>
     </net>
-    <net code="75" name="Net-(CON1-Pad10)">
-      <node ref="CON1" pin="10"/>
+    <net code="63" name="Net-(P17-Pad6)">
+      <node ref="P17" pin="6"/>
+    </net>
+    <net code="64" name="Net-(P1-Pad6)">
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="65" name="/CA9">
+      <node ref="D24" pin="2"/>
+      <node ref="D129" pin="1"/>
+      <node ref="D104" pin="2"/>
+      <node ref="D133" pin="1"/>
+      <node ref="D8" pin="2"/>
+      <node ref="D120" pin="2"/>
+      <node ref="D130" pin="1"/>
+      <node ref="D88" pin="2"/>
+      <node ref="D131" pin="1"/>
+      <node ref="D132" pin="1"/>
+      <node ref="D56" pin="2"/>
+      <node ref="D134" pin="1"/>
+      <node ref="D72" pin="2"/>
+      <node ref="D135" pin="1"/>
+      <node ref="D136" pin="1"/>
+      <node ref="D40" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="67" name="Net-(R8-Pad1)">
+      <node ref="U4" pin="4"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="68" name="/CA8">
+      <node ref="U4" pin="28"/>
+      <node ref="D23" pin="2"/>
+      <node ref="D71" pin="2"/>
+      <node ref="D39" pin="2"/>
+      <node ref="D136" pin="2"/>
+      <node ref="D103" pin="2"/>
+      <node ref="D114" pin="1"/>
+      <node ref="D116" pin="1"/>
+      <node ref="D117" pin="1"/>
+      <node ref="D118" pin="1"/>
+      <node ref="D119" pin="1"/>
+      <node ref="D115" pin="1"/>
+      <node ref="D87" pin="2"/>
+      <node ref="D113" pin="1"/>
+      <node ref="D55" pin="2"/>
+      <node ref="D120" pin="1"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="69" name="/CA7">
+      <node ref="D22" pin="2"/>
+      <node ref="D6" pin="2"/>
+      <node ref="D98" pin="1"/>
+      <node ref="D99" pin="1"/>
+      <node ref="D38" pin="2"/>
+      <node ref="D100" pin="1"/>
+      <node ref="D101" pin="1"/>
+      <node ref="D135" pin="2"/>
+      <node ref="D102" pin="1"/>
+      <node ref="D54" pin="2"/>
+      <node ref="U4" pin="27"/>
+      <node ref="D103" pin="1"/>
+      <node ref="D104" pin="1"/>
+      <node ref="D97" pin="1"/>
+      <node ref="D70" pin="2"/>
+      <node ref="D119" pin="2"/>
+      <node ref="D86" pin="2"/>
+    </net>
+    <net code="71" name="Net-(U4-Pad17)">
+      <node ref="U4" pin="17"/>
+    </net>
+    <net code="72" name="/CA6">
+      <node ref="D21" pin="2"/>
+      <node ref="D37" pin="2"/>
+      <node ref="D69" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D118" pin="2"/>
+      <node ref="D53" pin="2"/>
+      <node ref="D102" pin="2"/>
+      <node ref="D87" pin="1"/>
+      <node ref="D88" pin="1"/>
+      <node ref="D86" pin="1"/>
+      <node ref="D85" pin="1"/>
+      <node ref="U4" pin="26"/>
+      <node ref="D82" pin="1"/>
+      <node ref="D84" pin="1"/>
+      <node ref="D83" pin="1"/>
+      <node ref="D134" pin="2"/>
+      <node ref="D81" pin="1"/>
+    </net>
+    <net code="73" name="Net-(C14-Pad1)">
+      <node ref="U4" pin="16"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="74" name="/CA5">
+      <node ref="D69" pin="1"/>
+      <node ref="D101" pin="2"/>
+      <node ref="D71" pin="1"/>
+      <node ref="D85" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="D117" pin="2"/>
+      <node ref="D68" pin="1"/>
+      <node ref="D66" pin="1"/>
+      <node ref="D20" pin="2"/>
+      <node ref="D52" pin="2"/>
+      <node ref="U4" pin="25"/>
+      <node ref="D67" pin="1"/>
+      <node ref="D65" pin="1"/>
+      <node ref="D36" pin="2"/>
+      <node ref="D72" pin="1"/>
+      <node ref="D133" pin="2"/>
+      <node ref="D70" pin="1"/>
+    </net>
+    <net code="75" name="/CA4">
+      <node ref="D50" pin="1"/>
+      <node ref="D51" pin="1"/>
+      <node ref="D53" pin="1"/>
+      <node ref="D54" pin="1"/>
+      <node ref="D55" pin="1"/>
+      <node ref="D56" pin="1"/>
+      <node ref="D68" pin="2"/>
+      <node ref="D19" pin="2"/>
+      <node ref="D49" pin="1"/>
+      <node ref="D52" pin="1"/>
+      <node ref="D132" pin="2"/>
+      <node ref="D116" pin="2"/>
+      <node ref="D84" pin="2"/>
+      <node ref="D100" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="D35" pin="2"/>
+      <node ref="U4" pin="24"/>
+    </net>
+    <net code="76" name="/CA3">
+      <node ref="D51" pin="2"/>
+      <node ref="D33" pin="1"/>
+      <node ref="D40" pin="1"/>
+      <node ref="D35" pin="1"/>
+      <node ref="D36" pin="1"/>
+      <node ref="D37" pin="1"/>
+      <node ref="D38" pin="1"/>
+      <node ref="D34" pin="1"/>
+      <node ref="D39" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="D67" pin="2"/>
+      <node ref="D99" pin="2"/>
+      <node ref="D18" pin="2"/>
+      <node ref="D83" pin="2"/>
+      <node ref="D115" pin="2"/>
+      <node ref="U4" pin="23"/>
+      <node ref="D131" pin="2"/>
+    </net>
+    <net code="77" name="/CA2">
+      <node ref="D23" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="D24" pin="1"/>
+      <node ref="D22" pin="1"/>
+      <node ref="D17" pin="1"/>
+      <node ref="D20" pin="1"/>
+      <node ref="D18" pin="1"/>
+      <node ref="D19" pin="1"/>
+      <node ref="D21" pin="1"/>
+      <node ref="D66" pin="2"/>
+      <node ref="U4" pin="22"/>
+      <node ref="D34" pin="2"/>
+      <node ref="D82" pin="2"/>
+      <node ref="D130" pin="2"/>
+      <node ref="D98" pin="2"/>
+      <node ref="D114" pin="2"/>
+      <node ref="D50" pin="2"/>
+    </net>
+    <net code="78" name="/CA1">
+      <node ref="D65" pin="2"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D49" pin="2"/>
+      <node ref="D81" pin="2"/>
+      <node ref="D97" pin="2"/>
+      <node ref="U4" pin="21"/>
+      <node ref="D8" pin="1"/>
+      <node ref="D33" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="D17" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D129" pin="2"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D113" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="79" name="GND">
+      <node ref="R12" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="U2" pin="42"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U2" pin="35"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U2" pin="18"/>
+      <node ref="C11" pin="2"/>
+      <node ref="P3" pin="7"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C12" pin="2"/>
+      <node ref="P1" pin="5"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="P17" pin="3"/>
+      <node ref="P17" pin="5"/>
+      <node ref="C5" pin="2"/>
+      <node ref="SW4" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="80" name="Net-(R12-Pad2)">
+      <node ref="U4" pin="6"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="81" name="Net-(R7-Pad1)">
+      <node ref="U4" pin="3"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="82" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="U4" pin="18"/>
     </net>
   </nets>
 </export>

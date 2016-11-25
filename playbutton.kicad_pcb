@@ -1,7 +1,7 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
-    (links 0)
+    (links 400)
     (no_connects 4)
     (area 140 90 316.187863 272.084994)
     (thickness 1.6)
@@ -4273,11 +4273,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B6D6)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B16) (tstamp 5811B6D6)
     (at 199.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA7A)
-    (fp_text reference D16 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D16 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
@@ -4304,11 +4304,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B6C7)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B1A) (tstamp 5811B6C7)
     (at 202.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA74)
-    (fp_text reference D15 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D15 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
@@ -4335,11 +4335,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B6B8)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B1C) (tstamp 5811B6B8)
     (at 205.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA6E)
-    (fp_text reference D14 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D14 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
@@ -4366,11 +4366,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B6A9)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B1E) (tstamp 5811B6A9)
     (at 208.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA68)
-    (fp_text reference D13 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D13 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
@@ -4397,11 +4397,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B69A)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B22) (tstamp 5811B69A)
     (at 211.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA62)
-    (fp_text reference D12 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D12 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
@@ -4428,11 +4428,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B68B)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B24) (tstamp 5811B68B)
     (at 214.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA5C)
-    (fp_text reference D11 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D11 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
@@ -4459,11 +4459,11 @@
     )
   )
 
-  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58114BFE) (tstamp 5811B67C)
+  (module idlehands_footprints:Led_0603 (layer B.Cu) (tedit 58348B27) (tstamp 5811B67C)
     (at 217.5 172 135)
     (descr "SMD LED, 0603")
     (path /5814EA56)
-    (fp_text reference D10 (at 1.626346 0.070711 315) (layer B.SilkS)
+    (fp_text reference D10 (at 1.626346 0.070711 135) (layer B.SilkS) hide
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_text value LED (at -0.141421 1.555635 135) (layer B.SilkS) hide
